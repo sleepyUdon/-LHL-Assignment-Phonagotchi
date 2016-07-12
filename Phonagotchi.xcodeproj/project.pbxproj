@@ -24,6 +24,8 @@
 		607C5D341985A13300501387 /* default.png in Resources */ = {isa = PBXBuildFile; fileRef = 607C5D311985A13300501387 /* default.png */; };
 		607C5D351985A13300501387 /* sleeping.png in Resources */ = {isa = PBXBuildFile; fileRef = 607C5D321985A13300501387 /* sleeping.png */; };
 		607C5D361985A13300501387 /* grumpy.png in Resources */ = {isa = PBXBuildFile; fileRef = 607C5D331985A13300501387 /* grumpy.png */; };
+		7CB938B71D2EA54800E00A95 /* Pet.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CB938B61D2EA54800E00A95 /* Pet.m */; };
+		7CB938BA1D2ECA1D00E00A95 /* Apple.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CB938B91D2ECA1D00E00A95 /* Apple.m */; };
 		AA79DD631C99C01C0098CD0D /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AA79DD621C99C01C0098CD0D /* Default-568h@2x.png */; };
 		AFEF852A19F082EB00C5C416 /* bucket.png in Resources */ = {isa = PBXBuildFile; fileRef = AFEF852819F082EB00C5C416 /* bucket.png */; };
 		AFEF852B19F082EB00C5C416 /* apple.png in Resources */ = {isa = PBXBuildFile; fileRef = AFEF852919F082EB00C5C416 /* apple.png */; };
@@ -62,6 +64,10 @@
 		607C5D311985A13300501387 /* default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = default.png; sourceTree = "<group>"; };
 		607C5D321985A13300501387 /* sleeping.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sleeping.png; sourceTree = "<group>"; };
 		607C5D331985A13300501387 /* grumpy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = grumpy.png; sourceTree = "<group>"; };
+		7CB938B51D2EA54800E00A95 /* Pet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Pet.h; sourceTree = "<group>"; };
+		7CB938B61D2EA54800E00A95 /* Pet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Pet.m; sourceTree = "<group>"; };
+		7CB938B81D2ECA1D00E00A95 /* Apple.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Apple.h; sourceTree = "<group>"; };
+		7CB938B91D2ECA1D00E00A95 /* Apple.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Apple.m; sourceTree = "<group>"; };
 		AA79DD621C99C01C0098CD0D /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "../Default-568h@2x.png"; sourceTree = "<group>"; };
 		AFEF852819F082EB00C5C416 /* bucket.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bucket.png; sourceTree = "<group>"; };
 		AFEF852919F082EB00C5C416 /* apple.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = apple.png; sourceTree = "<group>"; };
@@ -124,16 +130,16 @@
 		602CAE461984363700C9FE49 /* Phonagotchi */ = {
 			isa = PBXGroup;
 			children = (
-				AFEF852819F082EB00C5C416 /* bucket.png */,
-				AFEF852919F082EB00C5C416 /* apple.png */,
-				607C5D311985A13300501387 /* default.png */,
-				607C5D321985A13300501387 /* sleeping.png */,
-				607C5D331985A13300501387 /* grumpy.png */,
+				7CB938BC1D2ECA4800E00A95 /* images */,
 				602CAE4F1984363800C9FE49 /* LPGAppDelegate.h */,
 				602CAE501984363800C9FE49 /* LPGAppDelegate.m */,
 				602CAE521984363800C9FE49 /* Main.storyboard */,
 				602CAE551984363800C9FE49 /* LPGViewController.h */,
 				602CAE561984363800C9FE49 /* LPGViewController.m */,
+				7CB938B81D2ECA1D00E00A95 /* Apple.h */,
+				7CB938B91D2ECA1D00E00A95 /* Apple.m */,
+				7CB938B51D2EA54800E00A95 /* Pet.h */,
+				7CB938B61D2EA54800E00A95 /* Pet.m */,
 				602CAE581984363900C9FE49 /* Images.xcassets */,
 				602CAE471984363700C9FE49 /* Supporting Files */,
 			);
@@ -168,6 +174,18 @@
 				602CAE681984363900C9FE49 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7CB938BC1D2ECA4800E00A95 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				AFEF852819F082EB00C5C416 /* bucket.png */,
+				AFEF852919F082EB00C5C416 /* apple.png */,
+				607C5D311985A13300501387 /* default.png */,
+				607C5D321985A13300501387 /* sleeping.png */,
+				607C5D331985A13300501387 /* grumpy.png */,
+			);
+			name = images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -274,7 +292,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7CB938BA1D2ECA1D00E00A95 /* Apple.m in Sources */,
 				602CAE571984363800C9FE49 /* LPGViewController.m in Sources */,
+				7CB938B71D2EA54800E00A95 /* Pet.m in Sources */,
 				602CAE511984363800C9FE49 /* LPGAppDelegate.m in Sources */,
 				602CAE4D1984363700C9FE49 /* main.m in Sources */,
 			);
